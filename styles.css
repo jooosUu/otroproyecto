@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+/* Agrega estilos para los botones */
+/* Agrega estilos para los botones con un borde */
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff; /* Agrega un borde */
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; /* Transición al pasar el mouse */
+}
+
+button:hover {
+    background-color: #0056b3;
+}

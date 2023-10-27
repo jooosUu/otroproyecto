@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Tipo de Dato</title>
+</head>
+<body>
+    <h1>Tipo de Dato</h1>
+    <p>Ingrese un valor:</p>
+    <input type="text" id="input_value" onkeyup="identificarTipoDeDato()">
+    <p id="resultado"></p>
+
+    <script>
+        function identificarTipoDeDato() {
+            var input_value = document.getElementById("input_value").value;
+            var resultado = document.getElementById("resultado");
+
+            if (isNaN(input_value)) {
+                resultado.innerHTML = "El valor ingresado es un tipo de dato Texto";
+            } else {
+                resultado.innerHTML = "El valor ingresado es un tipo de dato Número";
+            }
+        }
+    </script>
+</body>
+</html>

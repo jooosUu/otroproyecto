@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Caracteres</h1>
+        <textarea id="inputText" placeholder="Escribe tu texto aquí..."></textarea>
+        <button onclick="countCharacters()">Contar Caracteres</button>
+        <p id="outputText"></p>
+        <a href="index.html"><button>Volver al Inicio</button></a>
+    </div>
+    <script>
+        function countCharacters() {
+            let inputText = document.getElementById("inputText").value;
+            let outputText = document.getElementById("outputText");
+            outputText.innerHTML = "Número de caracteres: " + inputText.length;
+        }
+    </script>
+</body>
+</html>
